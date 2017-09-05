@@ -1,11 +1,85 @@
-h1 {
-  color: blue;
-}
-
-h2 {
-  color: red;
+h1, h2, h3, h4, h5, h6, .navbar {
+  font-family: catamaran, sans-serif;
 }
 
 p {
-  color: orange;
+  font-family: roboto slab, serif;
+  font-size: .8em;
+}
+
+li {
+  list-style: none;
+}
+
+.masthead {
+  background-color: #222222;
+  height: 90vh;
+}
+
+#language-dropdown a {
+  color: #222222;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+#logout-dropdown {
+  color: #222222;
+}
+
+.content-begin {
+  padding-top: 200px;
+}
+
+.nav-item {
+  padding-right: 20px;
+}
+
+.navbar-brand {
+  margin-left: 30px;
+}
+
+.navbar-brand span {
+  margin-left: 6px;
+  font-weight: 500;
+  line-height: 2.2;
+  font-size: 1.3em;
+  color: #fec503;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar {
+  background-color: #222222;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: .9em;
+
+}
+
+#login-form, #register-form {
+  display: block;
+}
+
+footer {
+  height: 140px;
+  background-color: #222222;
+  font-family: catamaran, sans-serif;
+  font-size: .8em;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  border-top: solid 2px #fec503;
+  padding: 0 40px;
+  margin-top: 30px;
+  color: #fff;
 }

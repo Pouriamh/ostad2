@@ -3,6 +3,7 @@
 @section('title', 'Philosophy')
 
   @section('content')
+  <div class="container content-begin">
 <form id="contactForm" name="sentMessage" novalidate>
   <div class="row">
     <div class="col-md-6">
@@ -28,4 +29,5 @@
     </div>
   </div>
 </form>
+</div>
 @endsection

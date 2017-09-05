@@ -35,6 +35,10 @@ Route::get('profile', function () {
   return view('profile');
 })->middleware('auth');
 
+Route::get('header', function () {
+  return view('header');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

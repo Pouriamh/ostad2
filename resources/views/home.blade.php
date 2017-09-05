@@ -3,7 +3,8 @@
 @section('title', 'Analysis')
 
   @section('content')
-  <div class="container">
+  <div class="fluid-container masthead content-begin">
+    <div class="container">
     <div class="row">
       <div class="">
         <h1>Ostad Elahi<br/>
@@ -12,8 +13,7 @@
       </div>
     </div>
   </div>
-
-</header>
+  </div>
 
 <!-- Overview Section -->
 <section>
