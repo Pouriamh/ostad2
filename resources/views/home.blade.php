@@ -5,21 +5,31 @@
   @section('content')
   <div class="fluid-container masthead content-begin">
     <div class="container">
-    <div class="row">
-      <div class="">
-        <h1>Ostad Elahi<br/>
-          <span>Music Analysis</span>
-        </h1>
+      <div class="row">
+        <div class="site-title">
+          <h1>Ostad Elahi<br/>
+            <span>Music Analysis</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center" id="down-arrow-row">
+      <div class="col-3 text-center" id="down-arrow-container">
+        <h3>Welcome</h3>
+        <a href="#overview-section"><svg id="down-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289 289">
+          <title>forward_button</title>
+          <circle cx="144.5" cy="144.5" r="138" fill="#222222" stroke="#fec503" stroke-miterlimit="10" stroke-width="13"/>
+          <polyline points="212.9 118.6 144.7 186.8 76 118.2" fill="none" stroke="#fec503" stroke-miterlimit="10" stroke-width="13"/>
+        </svg></a>
       </div>
     </div>
   </div>
-  </div>
 
 <!-- Overview Section -->
-<section>
+<section id="overview-section">
 
   <!-- Header Text -->
-  <div class="container">
+  <div class="container pd-100">
     <div class="row">
       <div class="text-center">
         <h2>Overview</h2>
@@ -77,6 +87,7 @@
       </div>
     </div>
   </div>
+
 
 </section>
   @endsection

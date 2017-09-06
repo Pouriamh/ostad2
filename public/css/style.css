@@ -2,6 +2,56 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: catamaran, sans-serif;
 }
 
+body {
+  font-family: catamaran, sans-serif;
+}
+
+.btn {
+  font-family: catamaran, sans-serif;
+}
+
+.sp-300 {
+  margin-top: 300px;
+}
+.sp-230 {
+  margin-top: 230px;
+}
+.sp-140 {
+  margin-top: 140px;
+}
+.sp-80 {
+  margin-top: 80px;
+}
+.sp-40 {
+  margin-top: 40px;
+}
+.sp-10 {
+  margin-top: 10px;
+}
+
+.pd-100 {
+  padding-top: 100px;
+}
+
+.text-small {
+  font-weight: 200;
+  font-size: .8em;
+}
+.text-mute {
+  color: #888888;
+}
+
+input::placeholder {
+  font-family: roboto slab, serif;
+  font-size: .9em;
+}
+
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
 p {
   font-family: roboto slab, serif;
   font-size: .8em;
@@ -13,7 +63,20 @@ li {
 
 .masthead {
   background-color: #222222;
-  height: 90vh;
+  height: 100vh;
+}
+
+.site-title h1{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 200;
+  font-size: 3.5em;
+  line-height: .9em;
+}
+
+.site-title h1 span {
+  font-size: .57em;
+  border-top: solid 2px #fec503;
 }
 
 #language-dropdown a {
@@ -61,11 +124,78 @@ li {
 .navbar a {
   color: #fff;
   font-size: .9em;
+}
 
+#down-arrow-row {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#down-arrow-row div h3 {
+  color: #fff;
+  font-weight: 200;
+  padding-bottom: 5px;
+}
+
+#down-arrow {
+  width: 40px;
+}
+
+#down-arrow > circle, #down-arrow > polyline {
+  transition: .3s;
+}
+
+.arrow-circle-fade {
+  fill: #fec503;
+}
+
+.arrow-fade {
+  stroke: #222222;
+}
+
+.panel-selector {
+  border-bottom: 1px solid #888888;
+}
+
+.heading-selector {
+  margin-bottom: 20px;
+  font-family: catamaran, sans;
+  text-transform: uppercase;
+}
+
+.form-link {
+  color: #888888;
+  text-decoration: none;
+}
+
+.form-link:hover, .form-link:focus, .form-link:active {
+  color: #fec503;
+  text-decoration: none;
+}
+
+.active {
+  color: #fec503;
 }
 
 #login-form, #register-form {
   display: block;
+}
+
+.login-button {
+  width: 100%;
+}
+
+.quote-row div img {
+  width: 100%;
+}
+
+.quote {
+  font-family: droid serif, serif;
+  font-size: 1.4em;
+  line-height: 1.8em;
+  color: #888888;
 }
 
 footer {
@@ -82,4 +212,8 @@ footer {
   padding: 0 40px;
   margin-top: 30px;
   color: #fff;
+}
+
+.footer-list li {
+  line-height: 1.7em;
 }

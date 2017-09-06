@@ -13,8 +13,8 @@
     <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
 		<link rel="stylesheet" href="css/style.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,500,700,900" rel="stylesheet">
 
   </head>
@@ -91,11 +91,11 @@
 
 
   <!-- Footer -->
-  <footer>
+  <footer class="sp-230">
     <div class="container">
       <div class="row justify-content-center">
         <ul class="footer-list text-center text-muted">
-          <li><a>Contact</a></li>
+          <li class="sp-10"><a>Contact</a></li>
           <li><a>Privacy Policy</a></li>
           <li><a>Copyright Website Name &copy; 2017</a></li>
         </ul>
@@ -108,6 +108,7 @@
   <!--<script src="{{ asset('js/app.js') }}"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/script.js"></script>
 

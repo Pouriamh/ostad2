@@ -15,12 +15,20 @@ Route::get('/', function () {
     return view('home');
 })->middleware('auth');
 
+Route::get('home', function () {
+    return view('home');
+})->middleware('auth');
+
 Route::get('philosophy', function () {
   return view('philosophy');
 })->middleware('auth');
 
 Route::get('tools', function () {
   return view('tools');
+});
+
+Route::get('login', function () {
+  return view('login');
 });
 
 Route::get('analysis', function () {
@@ -34,10 +42,6 @@ Route::get('course', function () {
 Route::get('profile', function () {
   return view('profile');
 })->middleware('auth');
-
-Route::get('header', function () {
-  return view('header');
-});
 
 Auth::routes();
 

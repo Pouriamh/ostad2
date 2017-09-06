@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 $(function() {
 
     $('#login-form-link').click(function(e) {
@@ -14,5 +16,18 @@ $(function() {
 		$(this).addClass('active');
 		e.preventDefault();
 	});
+
+});
+
+$('#down-arrow-container').mouseenter(function () {
+  $('#down-arrow > circle').addClass('arrow-circle-fade');
+  $('#down-arrow > polyline').addClass('arrow-fade');
+  $('#down-arrow-container').mouseleave(function () {
+    $('#down-arrow > circle').removeClass('arrow-circle-fade');
+    $('#down-arrow > polyline').removeClass('arrow-fade');
+  });
+});
+
+
 
 });
