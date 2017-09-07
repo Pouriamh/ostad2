@@ -26,7 +26,7 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="images/islamic_pattern.png" width="40px" height="40px" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="#"><img src="images/islamic_pattern.png" width="40px" height="40px" class="mx-auto my-auto" alt="">
     <span>Ostad Elahi Music Analysis</span></a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
@@ -72,6 +72,7 @@
                          document.getElementById('logout-form').submit();">
                 Logout
             </a>
+            <a class="dropdown-item" href="profile">Profile</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}
             </form>
@@ -83,22 +84,22 @@
   </nav>
 </header>
 
-
   <!-- Content -->
-
     @yield('content')
 
 
 
   <!-- Footer -->
-  <footer class="sp-230">
-    <div class="container">
-      <div class="row justify-content-center">
-        <ul class="footer-list text-center text-muted">
-          <li class="sp-10"><a>Contact</a></li>
-          <li><a>Privacy Policy</a></li>
-          <li><a>Copyright Website Name &copy; 2017</a></li>
-        </ul>
+  <footer class="sp-9">
+    <div class="container h-100">
+      <div class="row h-100 justify-content-center">
+        <div class="col-4">
+          <ul class="footer-list text-center">
+            <li class="sp-1"><a href="contact">Contact</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Copyright Website Name &copy; 2017</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </footer>
@@ -111,6 +112,6 @@
   <script src="js/smooth-scroll.js"></script>
   <script src="js/jqBootstrapValidation.js"></script>
   <script src="js/script.js"></script>
-
+  @yield('script')
   </body>
 </html>

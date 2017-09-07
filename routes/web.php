@@ -25,11 +25,7 @@ Route::get('philosophy', function () {
 
 Route::get('tools', function () {
   return view('tools');
-});
-
-Route::get('login', function () {
-  return view('login');
-});
+})->middleware('auth');
 
 Route::get('analysis', function () {
   return view('analysis');
@@ -42,6 +38,14 @@ Route::get('course', function () {
 Route::get('profile', function () {
   return view('profile');
 })->middleware('auth');
+
+Route::get('login', function () {
+  return view('login');
+});
+
+Route::get('contact', function () {
+  return view('contact');
+});
 
 Auth::routes();
 

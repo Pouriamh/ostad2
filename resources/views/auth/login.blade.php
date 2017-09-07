@@ -1,8 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
-
-<div class="fluid-container masthead content-begin">
+<!-- Masthead -->
+<div class="fluid-container masthead pd-14">
   <div class="container">
     <div class="row">
       <div class="site-title">
@@ -14,7 +14,7 @@
   </div>
   <div class="row justify-content-center" id="down-arrow-row">
     <div class="col-3 text-center" id="down-arrow-container">
-      <h3>Register &amp; Login</h3>
+      <h3 class="text-w">Register &amp; Login</h3>
       <a href="#login-form-group"><svg id="down-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289 289">
         <title>forward_button</title>
         <circle cx="144.5" cy="144.5" r="138" fill="#222222" stroke="#fec503" stroke-miterlimit="10" stroke-width="13"/>
@@ -24,8 +24,9 @@
   </div>
 </div>
 
-<div class="container sp-80">
-  <div class="row justify-content-center pd-100" id="login-form-group">
+<!-- Login / Register Form Group -->
+<div class="container pd-5">
+  <div class="row justify-content-center pd-6" id="login-form-group">
     <div class="col-md-6 col-12">
       <div class="container">
         <div class="row text-center panel-selector">
@@ -37,7 +38,9 @@
           </div>
         </div>
       </div>
-      <div class="panel-body sp-40">
+      <div class="panel-body sp-2">
+
+<!-- Login Form -->
         <form class="form-horizontal" id="login-form" style="display: block" method="POST" action="{{ route('login') }}">{{ csrf_field() }}
           <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
             <!--<label for="email" class="col-md-4 control-label">E-Mail Address</label>-->
@@ -78,6 +81,7 @@
           </div>
         </form>
 
+<!-- Register Form -->
         <form class="form-horizontal" id="register-form" style="display: none;" method="POST" action="{{ route('register') }}">{{ csrf_field() }}
           <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
             <!--<label for="name" class="col-md-4 control-label">Name</label>-->
@@ -120,7 +124,7 @@
           </div>
           <div class="form-group">
             <div class="col-md-6 mx-auto">
-              <button type="submit" class="btn btn-success login-button sp-10 text-uppercase">Register</button>
+              <button type="submit" class="btn btn-success login-button sp-1 text-uppercase">Register</button>
             </div>
           </div>
         </form>
@@ -129,7 +133,8 @@
   </div>
 </div>
 
-<div class="container quote-container sp-140">
+<!-- Quote -->
+<div class="container quote-container sp-5">
   <div class="row quote-row">
     <div class="col-lg-2">
       <img class="thumbnail" src="images/islamic_pattern.png">
@@ -139,6 +144,5 @@
     </div>
   </div>
 </div>
-</div>
 
-@endsection
+@stop
