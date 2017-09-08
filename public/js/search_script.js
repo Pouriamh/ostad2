@@ -1,12 +1,12 @@
 //Getting value from "ajax.php"
 
-function fill(Value) {
+//function fill(Value) {
 
    //Assigning data from selected band's "image" column to "band-image" element's source attribute in "search.html" file
 
    //$('#search-display').attr('src', 'images/'+Value);
 
-}
+//}
 
 $(document).ready(function() {
 
@@ -17,6 +17,10 @@ $(document).ready(function() {
        //Assigning search box value to javascript variable named as "name"
 
        var input = $('#search').val();
+
+       $.ajaxSetup({
+       headers: {'X-CSRF-Token': $('#_token').val()}
+   });
 
        //If "input" is empty
 
@@ -44,7 +48,7 @@ $(document).ready(function() {
 
                //Data will be sent to "ajax.php"
 
-               url: "ajax_search",
+               url: "ajax",
 
                //Data that will be sent to "ajax.php"
 

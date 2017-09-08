@@ -13,9 +13,15 @@ class SongListTable extends Migration
      */
     public function up()
     {
-        Schema::create('song_list', function (Blueprint $table) {
+        Schema::create('songs', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->text('song');
+            $table->text('genre');
+            $table->text('album');
+            $table->integer('track_number');
+            $table->text('image');
+
         });
     }
 
@@ -26,6 +32,6 @@ class SongListTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('song_list');
+        Schema::dropIfExists('songs');
     }
 }

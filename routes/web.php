@@ -27,9 +27,29 @@ Route::get('tools', function () {
   return view('tools');
 })->middleware('auth');
 
+/*
 Route::get('analysis', function () {
   return view('analysis');
 })->middleware('auth');
+*/
+
+Route::get('analysis', 'SearchController@index')->middleware('auth');
+/*
+Route::get('/search-field', 'SearchController@search');
+*/
+
+Route::get('search', 'SearchController@search')->middleware('auth');
+
+
+/*
+Route::get('analysis', function () {
+
+  $songs = DB::table('songs')->get();
+
+  return view('analysis', compact('songs'));
+})->middleware('auth');
+*/
+
 
 Route::get('course', function () {
   return view('course');
@@ -46,6 +66,7 @@ Route::get('login', function () {
 Route::get('contact', function () {
   return view('contact');
 });
+
 
 Auth::routes();
 
