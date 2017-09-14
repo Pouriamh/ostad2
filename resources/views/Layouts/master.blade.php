@@ -7,11 +7,11 @@
 		<meta name=viewport content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-		<title>Ostad - @yield('title')</title>
+		<title>Ostad Elahi - @yield('title')</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="https://use.fontawesome.com/c955110507.js"></script>
 
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet">
@@ -26,25 +26,25 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="images/islamic_pattern.png" width="40px" height="40px" class="mx-auto my-auto" alt="">
+    <a class="navbar-brand" href="#"><img src="{{ asset('images/islamic_pattern.png') }}" width="40px" height="40px" class="mx-auto my-auto" alt="">
     <span>Ostad Elahi Music Analysis</span></a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         @auth
         <li class="nav-item active">
-          <a class="nav-link" href="analysis">Analysis<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/analysis">Analysis<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="course">Course</a>
+          <a class="nav-link" href="/course">Course</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tools">Tools</a>
+          <a class="nav-link" href="/tools">Tools</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="philosophy">Philosophy</a>
+          <a class="nav-link" href="/philosophy">Philosophy</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="home">Home</a>
+          <a class="nav-link" href="/home">Home</a>
         </li>
         @endauth
 
@@ -108,10 +108,10 @@
   <!-- Scripts -->
   <!--<script src="{{ asset('js/app.js') }}"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/smooth-scroll.js"></script>
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/script.js"></script>
+  <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('js/smooth-scroll.js') }}"></script>
+  <script src="{{ asset('js/jqBootstrapValidation.js') }}"></script>
+  <script src="{{ asset('js/script.js') }}"></script>
   @yield('script')
   </body>
 </html>

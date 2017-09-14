@@ -55,6 +55,9 @@ li {
   font-weight: 200;
   font-size: .8rem;
 }
+.text-large {
+  font-size: 2.8rem;
+}
 .text-mute {
   color: #888888;
 }
@@ -117,6 +120,138 @@ input, textarea, .form-control {
 textarea {
   height: 10rem;
 }
+
+
+
+
+
+
+/* -- Course Sub-page -- */
+
+.progress-header {
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  border-top: 1px solid #eceeef;
+  border-bottom: 1px solid #eceeef;
+}
+
+.progress-bar {
+  background-color: #5cb85c;
+}
+
+.fa-arrow-circle-o-left {
+  color: #5cb85c;
+  transition: .2s;
+}
+
+.fa-arrow-circle-o-left:hover {
+  color: #449d44;
+  transition: .2s;
+}
+
+.progress {
+  background-color: #fff;
+  border: 1px solid #eceeef;
+}
+
+iframe {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* -- Course -- */
+
+#intermediate {
+  border-radius: .25rem 0 0 .25rem;
+}
+#master {
+  border-radius: 0 .25rem .25rem 0;
+}
+.skill-selection {
+  background-color: #f2f2f2;
+}
+.skill-selector h2 {
+  padding: .75rem 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #222222;
+}
+.skill-selector {
+  transition: .1s;
+  cursor: pointer;
+}
+.skill-selector:hover {
+  background-color: #fec503;
+  transition: .1s;
+}
+.course-col, .status-col, .icon-col {
+  width: 17%;
+  font-weight: 700;
+}
+.description-col {
+  width: 49%;
+  font-weight: 700;
+}
+.course-header {
+/*  padding: 0;
+  margin-right: 0;*/
+  font-family: roboto slab, serif;
+  border-top: 1px solid #eceeef;
+  border-bottom: 1px solid #eceeef;
+  background-color: #f2f2f2;
+}
+.course-header div {
+  padding: .75rem;
+}
+#course-container {
+  height: 18rem;
+  overflow-y: scroll;
+}
+#course-container th {
+  padding: 0;
+  border: none;
+}
+
+#course-container tr:hover {
+  background-color: #f2f2f2;
+}
+.course-link {
+  color: #fff;
+}
+.course-link:hover {
+  color: #fff;
+}
+
+.course-status-0, .course-status-1, .course-status-2 {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.course-button-0 {
+  color: #fff;
+  background-color: #d9534f;
+}
+.course-button-0:hover {
+  background-color:
+}
+.course-button-1, .course-button-2 {
+  background-color: #5cb85c;
+}
+.course-button-1:hover, .course-button-2:hover {
+  background-color: #449d44
+}
+
+
+
+
+
 
 
 
@@ -417,6 +552,9 @@ footer {
 
 .active {
   color: #fec503;
+}
+.active2 {
+  background-color: #fec503;
 }
 
 #login-form, #register-form {

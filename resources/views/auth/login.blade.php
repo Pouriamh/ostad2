@@ -23,7 +23,6 @@
     </div>
   </div>
 </div>
-
 <!-- Login / Register Form Group -->
 <div class="container pd-5">
   <div class="row justify-content-center pd-6" id="login-form-group">

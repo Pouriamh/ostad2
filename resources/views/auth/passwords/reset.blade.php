@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@extends('layouts.master')
+@section('title', 'Reset Password')
 
 @section('content')
 <div class="container">
@@ -67,4 +68,4 @@
         </div>
     </div>
 </div>
-@endsection
+@stop

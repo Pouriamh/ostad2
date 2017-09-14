@@ -148,7 +148,8 @@
     <button id="hide-button" class="btn btn-danger btn-sm">Hide</button>
   </div>
 
-
+  <!-- Timeline -->
+  <h3 class="sp-6 text-center">(TIMELINE WILL GO HERE)</h3>
 
 <!-- End body container -->
 </div>

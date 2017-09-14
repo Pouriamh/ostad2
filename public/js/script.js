@@ -16,8 +16,27 @@ $(function() {
 		$(this).addClass('active');
 		e.preventDefault();
 	});
-
 });
+
+  $(function() {
+
+      $('#intermediate').click(function(e) {
+  		$("#intermediate-courses").delay(100).fadeIn(100);
+   		$("#master-courses").fadeOut(100);
+  		$('#master').removeClass('active2');
+  		$(this).addClass('active2');
+  		e.preventDefault();
+  	});
+  	$('#master').click(function(e) {
+  		$("#master-courses").delay(100).fadeIn(100);
+   		$("#intermediate-courses").fadeOut(100);
+  		$('#intermediate').removeClass('active2');
+  		$(this).addClass('active2');
+  		e.preventDefault();
+  	});
+  });
+
+
 
 $('#down-arrow-container').mouseenter(function () {
   $('#down-arrow > circle').addClass('arrow-circle-fade');

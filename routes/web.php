@@ -27,34 +27,6 @@ Route::get('tools', function () {
   return view('tools');
 })->middleware('auth');
 
-/*
-Route::get('analysis', function () {
-  return view('analysis');
-})->middleware('auth');
-*/
-
-Route::get('analysis', 'SearchController@index')->middleware('auth');
-/*
-Route::get('/search-field', 'SearchController@search');
-*/
-
-Route::get('search', 'SearchController@search')->middleware('auth');
-
-
-/*
-Route::get('analysis', function () {
-
-  $songs = DB::table('songs')->get();
-
-  return view('analysis', compact('songs'));
-})->middleware('auth');
-*/
-
-
-Route::get('course', function () {
-  return view('course');
-})->middleware('auth');
-
 Route::get('profile', function () {
   return view('profile');
 })->middleware('auth');
@@ -67,6 +39,19 @@ Route::get('contact', function () {
   return view('contact');
 });
 
+Route::get('analysis', 'SearchController@index')->middleware('auth');
+
+Route::get('search', 'SearchController@search')->middleware('auth');
+
+Route::post('contact', 'ContactController@postContact');
+
+Route::get('course', 'CourseController@index');
+
+Route::get('course-subpage/{id}', 'CourseController@show');
+
+Route::get('reset-password', 'UserController@password');
+
+Route::post('reset-password', 'UserController@resetPassword');
 
 Auth::routes();
 
