@@ -24,7 +24,7 @@ class SearchController extends Controller
       if ($request->ajax())
       {
         $output="";
-        $songs=DB::table('songs')->where('song','LIKE','%'.$request->search.'%')->get();
+        $songs=DB::table('songs')->where('song','LIKE','%'.$request->input.'%')->get();
 
         if ($songs)
         {
@@ -36,16 +36,33 @@ class SearchController extends Controller
       }
     }
 
-    public function show($id)
+    public function show(Request $request)
     {
-      $song = Song::find($id);
+      $output="";
+      if ($request->ajax())
+      {
+        $output="";
+        $audio_files=DB::table('audio_files')->where('song_id', '=', $request->song)->get();
 
-      if ($course->status == 0) {
-        return redirect()->action('CourseController@index');
-      } else {
-      return view('course-subpage', compact('course'));
+        if($audio_files)
+        {
+          foreach ($audio_files as $audio_file) {
+            $output.='<li>'.$audio_file->file.'</li>';
+          }
+          return Response($output);
+        }
       }
     }
 
+    public function reset(Request $request)
+    {
+      $output="";
+      $audio_files=DB::table('audio_files')->get();
+
+      foreach ($audio_files as $audio_file) {
+        $output.='<li>'.$audio_file->file.'</li>';
+      }
+      return Response($output);
+    }
 
 }

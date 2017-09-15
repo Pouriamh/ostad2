@@ -43,7 +43,9 @@ Route::get('analysis', 'SearchController@index')->middleware('auth');
 
 Route::get('search', 'SearchController@search')->middleware('auth');
 
-Route::get('song/{id}', 'SearchController@show');
+Route::get('audio-file', 'SearchController@show');
+
+Route::get('show-all', 'SearchController@reset');
 
 Route::post('contact', 'ContactController@postContact');
 

@@ -15,15 +15,12 @@
     </div>
   </div>
 
-
-
 <!-- Search / Result / Info Section -->
-  <div class="container-fluid search-section sp-3">
-    <div class="row">
-
+  <div id="search-section" class="container-fluid search-section sp-3">
+    <div id="append-columns" class="row">
 
 <!-- Left Column -->
-      <div class="col-4">
+      <div id="search-left-column" class="col-4">
 
 <!-- Search Box -->
         <div class="row">
@@ -80,34 +77,33 @@
             </div>
           </div>
         </div>
-
       </div>
 
-
 <!-- Middle Column -->
-      <div class="col-5">
+      <div id="search-middle-column" class="col-5">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-bold">Drag Media to Timeline</h2>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-between">
+                <h2 class="text-bold">Drag Media to Timeline</h2>
+                <button id="show-all" class="btn btn-danger btn-sm mb-2">Show All Audio</button>
+              </div>
+            </div>
             <div id="drag-media-box" class="results-box">
-<!-- Media files go here -->
 
+<!-- Audio files populate here -->
               <ul id="media-results" class="results">
-
               @foreach ($audio_files as $audio_file)
                 <li class="audio-file" data-song-id="{{ $audio_file->song_id }}">{{ $audio_file->file }}</li>
               @endforeach
-
               </ul>
-              
             </div>
           </div>
         </div>
       </div>
 
-
 <!-- Right Column -->
-      <div class="col-3 right-column">
+      <div id="search-right-column" class="col-3 right-column">
 <!-- Info -->
         <div class="row">
           <div class="col-12">

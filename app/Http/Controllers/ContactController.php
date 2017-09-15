@@ -18,9 +18,9 @@ class ContactController extends Controller
         'bodyMessage' => $request->bodyMessage
       );
 
-      Mail::send('emails.contact', $data, function($message) use ($data){
+      Mail::send('emails.contact-template', $data, function($message) use ($data){
         $message->from($data['email']);
-        $message->to('tonysmithdzn@gmail.com');
+        $message->to('');
       });
 
       return view('contact');
