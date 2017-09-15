@@ -37,7 +37,6 @@ $(function() {
   });
 
 
-
 $('#down-arrow-container').mouseenter(function () {
   $('#down-arrow > circle').addClass('arrow-circle-fade');
   $('#down-arrow > polyline').addClass('arrow-fade');
@@ -46,7 +45,6 @@ $('#down-arrow-container').mouseenter(function () {
     $('#down-arrow > polyline').removeClass('arrow-fade');
   });
 });
-
 
 
 });

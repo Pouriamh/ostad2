@@ -1,17 +1,24 @@
 @extends('layouts.master')
 
-@section('title', 'Password Reset')
+@section('title', 'Change Password')
 
 @section('content')
 
 
-<h1 class="sp-6">hey</h1>
+<div class="container pd-9">
 
-<form method="POST" action="{{ 'reset-password' }}">{{ csrf_field() }}
+  <div class="row">
+    <div class="text-center col-12">
+      <h1>Change Password</h1>
+    </div>
+  </div>
+
+<div class="row justify-content-center">
+<form class="sp-5 col-6" method="POST" action="{{ 'reset-password' }}">{{ csrf_field() }}
   <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
     <!--<label for="password" class="col-md-4 control-label">Password</label>-->
     <div class="col-12">
-      <input id="password" placeholder="Password" type="password" class="form-control" name="password" required>
+      <input id="password" placeholder="New Password" type="password" class="form-control" name="password" required>
         @if ($errors->has('password'))
           <span class="help-block">
             <strong>{{ $errors->first('password') }}</strong>
@@ -34,7 +41,8 @@
   </div>
 
 </form>
-
+</div>
+</div>
 
 
 @stop

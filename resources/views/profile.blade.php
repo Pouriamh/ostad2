@@ -24,21 +24,22 @@
         </div>
         <div class="card-block">
           <div class="container">
-            <form>
+
+            <form method="POST" action="{{ action('UserController@update', Auth::user()->id) }}">{{ csrf_field() }}
 
               <div class="form-group row sp-2">
                 <label class="col-3" for="name">Name</label>
-                <input type="email" class="col-9 form-control" id="name"  placeholder="{{ Auth::user()->name }}">
+                <input name="name" type="text" class="col-9 form-control" id="name"  value="{{ Auth::user()->name }}">
               </div>
 
               <div class="form-group row">
                 <label class="col-3" for="email">Email Address</label>
-                <input type="email" class="col-9 form-control" id="email"  placeholder="{{ Auth::user()->email }}">
+                <input name="email" type="email" class="col-9 form-control" id="email"  value="{{ Auth::user()->email }}">
               </div>
 
               <div class="form-group row">
                 <label class="col-3" for="language">Language</label>
-                <select class="col-9 form-control" id="language">
+                <select name="language" class="col-9 form-control" id="language">
                   <option>English</option>
                   <option>French</option>
                   <option>Persian</option>
@@ -47,11 +48,18 @@
 
               <div class="form-group row">
                 <label class="col-3" for="location">Location</label>
-                <select class="col-9 input-medium bfh-countries form-control" data-country="US" id="location">
+                <select name="location" class="col-9 input-medium bfh-countries form-control" data-country="US" id="location">
                 </select>
               </div>
 
-              <a href="{{ 'reset-password' }}">Reset Password</a>
+              <a href="{{ 'reset-password' }}">Change Password</a>
+
+              @if(isset($resetMessage))
+                     <div class="alert alert-success">
+                         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                         {{ $resetMessage }}
+                     </div>
+              @endif
 
               <div class="form-group row sp-5">
                 <div class="col-6">
@@ -59,7 +67,7 @@
                 </div>
 
                 <div class="col-6 d-flex justify-content-end">
-                  <button type="submit" class="btn btn-danger">Reset Profile</button>
+                  <button class="btn btn-danger">Reset Profile</button>
                 </div>
               </div>
 

@@ -47,7 +47,7 @@
 <!-- Song list goes here -->
               <ul id="search-results" class="results">
                 @foreach ($songs as $song)
-                <li class="search-result"><a>{{ $song->song }}</a></li>
+                <li data-song="{{ $song->song }}" data-id="{{ $song->id }}" data-album="{{ $song->album }}" data-track="{{ $song->track_number }}" data-image="{{ $song->image }}" class="search-result">{{ $song->song }}</li>
                 @endforeach
               </ul>
             </div>
@@ -60,22 +60,22 @@
             <h2 class="text-bold">Filter</h2>
             <div class="row">
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">&nbsp;Rock</label>
+                <label><input type="checkbox" value="">Paragraph</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">&nbsp;Hip-Hop</label>
+                <label><input type="checkbox" value="">Sentence</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">&nbsp;Country</label>
+                <label><input type="checkbox" value="">Phrase</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">&nbsp;Jazz</label>
+                <label><input type="checkbox" value="">Motif</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">&nbsp;Plucking</label>
+                <label><input type="checkbox" value="">Plucking</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">&nbsp;Etc.</label>
+                <label><input type="checkbox" value="">Etc.</label>
               </div>
             </div>
           </div>
@@ -91,23 +91,15 @@
             <h2 class="text-bold">Drag Media to Timeline</h2>
             <div id="drag-media-box" class="results-box">
 <!-- Media files go here -->
+
               <ul id="media-results" class="results">
-                <li>(None)</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li class="selected">Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
-                <li>Hello</li>
+
+              @foreach ($audio_files as $audio_file)
+                <li class="audio-file" data-song-id="{{ $audio_file->song_id }}">{{ $audio_file->file }}</li>
+              @endforeach
+
               </ul>
+              
             </div>
           </div>
         </div>
@@ -123,9 +115,9 @@
             <div class="row">
               <div class="col-12">
                 <ul class="media-info">
-                  <li>Album Title<br /><span>Presence</span></li>
-                  <li>Track Number<br /><span>#3</span></li>
-                  <li>Piece Name<br /><span>Farangi Suite</span></li>
+                  <li>Album Title<br /><span id="info-album">Presence</span></li>
+                  <li>Track Number<br /><span id="info-track">#3</span></li>
+                  <li>Piece Name<br /><span id="info-song">Farangi Suite</span></li>
                 </ul>
               </div>
             </div>
@@ -134,7 +126,7 @@
 <!-- Album Cover -->
         <div class="row align-self-start">
           <div class="col-12 h-100">
-            <img class="album-cover" src="images/presence.jpg">
+            <img id="info-image" class="album-cover" src="images/presence.jpg">
           </div>
         </div>
 

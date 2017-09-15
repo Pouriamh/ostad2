@@ -43,6 +43,8 @@ Route::get('analysis', 'SearchController@index')->middleware('auth');
 
 Route::get('search', 'SearchController@search')->middleware('auth');
 
+Route::get('song/{id}', 'SearchController@show');
+
 Route::post('contact', 'ContactController@postContact');
 
 Route::get('course', 'CourseController@index');
@@ -52,6 +54,8 @@ Route::get('course-subpage/{id}', 'CourseController@show');
 Route::get('reset-password', 'UserController@password');
 
 Route::post('reset-password', 'UserController@resetPassword');
+
+Route::post('profile', 'UserController@update');
 
 Auth::routes();
 
