@@ -47,12 +47,14 @@ class SearchController extends Controller
         if($audio_files)
         {
           foreach ($audio_files as $audio_file) {
-            $output.='<li>'.$audio_file->file.'</li>';
+            $output.='<li class="audio-file" data-type="'.$audio_file->type.'" data-song-id="'.$audio_file->song_id.'">'.$audio_file->file.'</li>';
           }
           return Response($output);
         }
       }
     }
+
+
 
     public function reset(Request $request)
     {
@@ -60,9 +62,44 @@ class SearchController extends Controller
       $audio_files=DB::table('audio_files')->get();
 
       foreach ($audio_files as $audio_file) {
-        $output.='<li>'.$audio_file->file.'</li>';
+        $output.='<li class="audio-file" data-type="'.$audio_file->type.'" data-song-id="'.$audio_file->song_id.'">'.$audio_file->file.'</li>';
       }
       return Response($output);
     }
+
+    public function filter(Request $request)
+    {
+      $output="";
+      if ($request->ajax())
+      {
+        $output="";
+        $audio_files=DB::table('audio_files')->where('song_id', '=', $request->song)->where('type', '=', $request->type)->get();
+
+        if($audio_files)
+        {
+          foreach ($audio_files as $audio_file) {
+            $output.='<li class="audio-file" data-type="'.$audio_file->type.'" data-song-id="'.$audio_file->song_id.'">'.$audio_file->file.'</li>';
+          }
+          return Response($output);
+        }
+      }
+    }
+
+    // THIS ACTION (FILTER) IS WORKING PROPERLY
+    // public function filter(Request $request)
+    // {
+    //   $output="";
+    //   $audio_files=DB::table('audio_files')->where('type', '=', $request->type)->get();
+    //
+    //   if($audio_files)
+    //   {
+    //       foreach ($audio_files as $audio_file)
+    //       {
+    //         $output.='<li class="audio-file" data-type="'.$audio_file->type.'" data-song-id="'.$audio_file->song_id.'">'.$audio_file->file.'</li>';
+    //       }
+    //       return Response($output);
+    //   }
+    //
+    // }
 
 }

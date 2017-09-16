@@ -57,22 +57,22 @@
             <h2 class="text-bold">Filter</h2>
             <div class="row">
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">Paragraph</label>
+                <label><input id="paragraph-box" class="filter-checkbox" data-type="paragraph" type="checkbox" value="paragraph">Paragraph</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">Sentence</label>
+                <label><input id="sentence-box" class="filter-checkbox" data-type="sentence" type="checkbox" value="sentence">Sentence</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">Phrase</label>
+                <label><input id="phrase-box" class="filter-checkbox" data-type="phrase" type="checkbox" value="phrase">Phrase</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">Motif</label>
+                <label><input id="motif-box" class="filter-checkbox" data-type="motif" type="checkbox" value="motif">Motif</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">Plucking</label>
+                <label><input id="plucking-box" class="filter-checkbox" data-type="plucking" type="checkbox" value="plucking">Plucking</label>
               </div>
               <div class="checkbox col-4">
-                <label><input type="checkbox" value="">Etc.</label>
+                <label><input id="etc-box" class="filter-checkbox" data-type="" type="checkbox" value="">Etc.</label>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
 <!-- Audio files populate here -->
               <ul id="media-results" class="results">
               @foreach ($audio_files as $audio_file)
-                <li class="audio-file" data-song-id="{{ $audio_file->song_id }}">{{ $audio_file->file }}</li>
+                <li class="audio-file" data-type="{{ $audio_file->type }}" data-song-id="{{ $audio_file->song_id }}">{{ $audio_file->file }}</li>
               @endforeach
               </ul>
             </div>

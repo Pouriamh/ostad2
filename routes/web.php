@@ -47,6 +47,8 @@ Route::get('audio-file', 'SearchController@show');
 
 Route::get('show-all', 'SearchController@reset');
 
+Route::get('filter', 'SearchController@filter');
+
 Route::post('contact', 'ContactController@postContact');
 
 Route::get('course', 'CourseController@index');
