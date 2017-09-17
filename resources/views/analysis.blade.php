@@ -55,7 +55,7 @@
         <div class="row sp-1">
           <div class="col-12">
             <h2 class="text-bold">Filter</h2>
-            <div class="row">
+            <div id="checkbox-row" class="row">
               <div class="checkbox col-4">
                 <label><input id="paragraph-box" class="filter-checkbox" data-type="paragraph" type="checkbox" value="paragraph">Paragraph</label>
               </div>

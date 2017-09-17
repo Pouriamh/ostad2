@@ -48,8 +48,7 @@
 
               <div class="form-group row">
                 <label class="col-3" for="location">Location</label>
-                <select name="location" class="col-9 input-medium bfh-countries form-control" data-country="US" id="location">
-                </select>
+                <input name="location" type="text" class="col-9 form-control" id="location"  value="{{ Auth::user()->location }}">
               </div>
 
               <a href="{{ 'reset-password' }}">Change Password</a>
