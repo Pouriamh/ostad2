@@ -41,6 +41,7 @@ $('#search').on('keyup', function() {
 
 
 // Clicking on song affects info fields and displays related audio files
+// Also applies filters to ajax result
 
 $('#search-results').on('click', '.search-result', function() {
   $('.search-result').removeClass('selected');
@@ -63,6 +64,18 @@ $('#search-results').on('click', '.search-result', function() {
     data : {'song':$song_id},
     success : function(data){
       $('#media-results').html(data);
+      if ($('.filter-checkbox').is(':checked')) {
+        var type = $('.filter-checkbox:checked').map(function() { return $(this).val() }).get();
+        var length = type.length;
+        if ((type.length)==0) {
+          type = ['paragraph', 'sentence', 'phrase', 'motif', 'plucking', 'etc'];
+        }
+        $type = type;
+        $('.audio-file').hide();
+        for (i = 0; i < type.length; i++) {
+        $('.audio-file[data-type='+type[i]+']').show();
+        }
+      }
     }
   })
 });
@@ -70,15 +83,13 @@ $('#search-results').on('click', '.search-result', function() {
 
 // Filter with checkboxes
 
-/// FIX THIS TO MAKE SURE THAT IF NO CHECKBOXES ARE CHECKED, IT DISPLAYS ALL AUDIO
-
   $('#checkbox-row').on('click', '.filter-checkbox', function() {
-    if (!$('.filter-checkbox').is(':checked')) {
-      $('.audio-file').show();
-    }
     var type = $('.filter-checkbox:checked').map(function() { return $(this).val() }).get();
-    $type = type;
     var length = type.length;
+    if ((type.length)==0) {
+      type = ['paragraph', 'sentence', 'phrase', 'motif', 'plucking', 'etc'];
+    }
+    $type = type;
     $('.audio-file').hide();
     for (i = 0; i < type.length; i++) {
     $('.audio-file[data-type='+type[i]+']').show();
@@ -90,6 +101,7 @@ $('#search-results').on('click', '.search-result', function() {
 
   $('#show-all').on('click', function() {
     $('.search-result').removeClass('selected');
+    $('.filter-checkbox:checked').prop('checked', false);
     $.ajax({
       type : 'get',
       url : 'show-all',
