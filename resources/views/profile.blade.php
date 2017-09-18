@@ -20,7 +20,7 @@
 
       <div class="card">
         <div class="card-header">
-          Info
+          <h2>Info</h2>
         </div>
         <div class="card-block">
           <div class="container">
@@ -28,18 +28,18 @@
             <form method="POST" action="{{ action('UserController@update', Auth::user()->id) }}">{{ csrf_field() }}
 
               <div class="form-group row sp-2">
-                <label class="col-3" for="name">Name</label>
-                <input name="name" type="text" class="col-9 form-control" id="name"  value="{{ Auth::user()->name }}">
+                <label class="col-12 col-md-3" for="name">Name</label>
+                <input name="name" type="text" class="col-12 col-md-9 form-control" id="name"  value="{{ Auth::user()->name }}">
               </div>
 
               <div class="form-group row">
-                <label class="col-3" for="email">Email Address</label>
-                <input name="email" type="email" class="col-9 form-control" id="email"  value="{{ Auth::user()->email }}">
+                <label class="col-12 col-md-3" for="email">Email Address</label>
+                <input name="email" type="email" class="col-12 col-md-9 form-control" id="email"  value="{{ Auth::user()->email }}">
               </div>
 
               <div class="form-group row">
-                <label class="col-3" for="language">Language</label>
-                <select name="language" class="col-9 form-control" id="language">
+                <label class="col-12 col-md-3" for="language">Language</label>
+                <select name="language" class="col-12 col-md-9 form-control" id="language">
                   <option>English</option>
                   <option>French</option>
                   <option>Persian</option>
@@ -47,8 +47,8 @@
               </div>
 
               <div class="form-group row">
-                <label class="col-3" for="location">Location</label>
-                <input name="location" type="text" class="col-9 form-control" id="location"  value="{{ Auth::user()->location }}">
+                <label class="col-12 col-md-3" for="location">Location</label>
+                <input name="location" type="text" class="col-12 col-md-9 form-control" id="location"  value="{{ Auth::user()->location }}">
               </div>
 
               <a href="{{ 'reset-password' }}">Change Password</a>
@@ -61,13 +61,13 @@
               @endif
 
               <div class="form-group row sp-5">
-                <div class="col-6">
+                <div class="col-12 text-center">
                   <button type="submit" class="btn btn-success">Save Changes</button>
                 </div>
 
-                <div class="col-6 d-flex justify-content-end">
+                <!--<div class="col-6 d-flex justify-content-end">
                   <button class="btn btn-danger">Reset Profile</button>
-                </div>
+                </div>-->
               </div>
 
             </form>

@@ -7,10 +7,12 @@
 <div class="fluid-container masthead pd-14">
   <div class="container">
     <div class="row">
-      <div class="site-title">
-        <h1>Ostad Elahi<br/>
-          <span>Music Analysis</span>
-        </h1>
+      <div class="col-12">
+        <div class="site-title">
+          <h1>Ostad Elahi<br/>
+            <span>Music Analysis</span>
+          </h1>
+        </div>
       </div>
     </div>
   </div>
@@ -53,29 +55,29 @@
 <!-- Features Blocks -->
     <div class="row">
       <div class="col-lg-3 col-sm-6 col-12">
-        <div>
-          <img class="icon mx-auto" src="images/waveform_icon.png">
+        <div class="text-center">
+          <img class="icon col-6 col-sm-8 col-lg-12" src="images/waveform_icon.png">
         </div>
         <h2 class="text-center sp-2">Analysis</h2>
         <p class="text-center sp-1 text-mute">Access our musical analysis module, an interactive music player designed to help you practice the music of Ostad Elahi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
       </div>
       <div class="col-lg-3 col-sm-6 col-12">
-        <div>
-          <img class="icon" src="images/tools_icon.png">
+        <div class="text-center">
+          <img class="icon col-6 col-sm-8 col-lg-12" src="images/tools_icon.png">
         </div>
         <h2 class="text-center sp-2">Tools</h2>
         <p class="text-center sp-1 text-mute">Explore tunings, terminology, and further helpful resources. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
       </div>
       <div class="col-lg-3 col-sm-6 col-12">
-        <div>
-          <img class="icon" src="images/course_icon.png">
+        <div class="text-center">
+          <img class="icon col-6 col-sm-8 col-lg-12" src="images/course_icon.png">
         </div>
         <h2 class="text-center sp-2">Course</h2>
         <p class="text-center sp-1 text-mute">Enroll in courses designed to guide you through the repertroire and view our collection of videos featuring Dr. Shahrokh Elahi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
       </div>
       <div class="col-lg-3 col-sm-6 col-12">
-        <div>
-          <img class="icon" src="images/ostad_portrait.jpg">
+        <div class="text-center">
+          <img class="icon col-6 col-sm-8 col-lg-12" src="images/ostad_portrait.jpg">
         </div>
         <h2 class="text-center sp-2">Philosophy</h2>
         <p class="text-center sp-1 text-mute">Explore Ostad Elahi's philosophy of music as a means for establishing spiritual connection. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>

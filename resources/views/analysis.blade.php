@@ -25,7 +25,7 @@
 <!-- Search Box -->
         <div class="row">
           <div class="col-12">
-            <h2 class="text-bold">Search</h2>
+            <h2 class="text-bold search-header">Search</h2>
             <form class="form-horizontal" style="display: block" method="POST">
               <div class="form-group">
                 <div class="col-12 search-field">
@@ -39,10 +39,11 @@
 <!-- Song List Results -->
         <div class="row">
           <div class="col-12">
-            <h2 class="text-bold">Song List</h2>
+            <h2 class="text-bold search-header">Song List</h2>
             <div id="search-results-box" class="results-box">
 <!-- Song list goes here -->
               <ul id="search-results" class="results">
+                <li id="deselect" data-song="" data-id="" data-album="" data-track="" data-image=""class="deselect">(Deselect)</li>
                 @foreach ($songs as $song)
                 <li data-song="{{ $song->song }}" data-id="{{ $song->id }}" data-album="{{ $song->album }}" data-track="{{ $song->track_number }}" data-image="{{ $song->image }}" class="search-result">{{ $song->song }}</li>
                 @endforeach
@@ -54,25 +55,25 @@
 <!-- Filter Checkboxes -->
         <div class="row sp-1">
           <div class="col-12">
-            <h2 class="text-bold">Filter</h2>
+            <h2 class="text-bold search-header">Filter</h2>
             <div id="checkbox-row" class="row">
               <div class="checkbox col-4">
-                <label><input id="paragraph-box" class="filter-checkbox" data-type="paragraph" type="checkbox" value="paragraph">Paragraph</label>
+                <label><input id="paragraph-box" class="filter-checkbox" data-type="paragraph" type="checkbox" value="paragraph"><span>Paragraph</span></label>
               </div>
               <div class="checkbox col-4">
-                <label><input id="sentence-box" class="filter-checkbox" data-type="sentence" type="checkbox" value="sentence">Sentence</label>
+                <label><input id="sentence-box" class="filter-checkbox" data-type="sentence" type="checkbox" value="sentence"><span>Sentence</span></label>
               </div>
               <div class="checkbox col-4">
-                <label><input id="phrase-box" class="filter-checkbox" data-type="phrase" type="checkbox" value="phrase">Phrase</label>
+                <label><input id="phrase-box" class="filter-checkbox" data-type="phrase" type="checkbox" value="phrase"><span>Phrase</span></label>
               </div>
               <div class="checkbox col-4">
-                <label><input id="motif-box" class="filter-checkbox" data-type="motif" type="checkbox" value="motif">Motif</label>
+                <label><input id="motif-box" class="filter-checkbox" data-type="motif" type="checkbox" value="motif"><span>Motif</span></label>
               </div>
               <div class="checkbox col-4">
-                <label><input id="plucking-box" class="filter-checkbox" data-type="plucking" type="checkbox" value="plucking">Plucking</label>
+                <label><input id="plucking-box" class="filter-checkbox" data-type="plucking" type="checkbox" value="plucking"><span>Plucking</span></label>
               </div>
               <div class="checkbox col-4">
-                <label><input id="etc-box" class="filter-checkbox" data-type="" type="checkbox" value="">Etc.</label>
+                <label><input id="etc-box" class="filter-checkbox" data-type="" type="checkbox" value=""><span>Etc.</span></label>
               </div>
             </div>
           </div>
@@ -85,8 +86,7 @@
           <div class="col-12">
             <div class="row">
               <div class="col-12 d-flex justify-content-between">
-                <h2 class="text-bold">Drag Media to Timeline</h2>
-                <button id="show-all" class="btn btn-danger btn-sm mb-2">Show All Audio</button>
+                <h2 class="text-bold search-header">Drag Media to Timeline</h2>
               </div>
             </div>
             <div id="drag-media-box" class="results-box">
@@ -107,13 +107,13 @@
 <!-- Info -->
         <div class="row">
           <div class="col-12">
-            <h2 class="text-bold">Info</h2>
+            <h2 class="text-bold search-header">Info</h2>
             <div class="row">
               <div class="col-12">
                 <ul class="media-info">
-                  <li>Album Title<br /><span id="info-album">Presence</span></li>
-                  <li>Track Number<br /><span id="info-track">#3</span></li>
-                  <li>Piece Name<br /><span id="info-song">Farangi Suite</span></li>
+                  <li>Album Title<br /><span id="info-album"></span></li>
+                  <li>Track Number<br /><span id="info-track"></span></li>
+                  <li>Piece Name<br /><span id="info-song"></span></li>
                 </ul>
               </div>
             </div>
@@ -122,7 +122,7 @@
 <!-- Album Cover -->
         <div class="row align-self-start">
           <div class="col-12 h-100">
-            <img id="info-image" class="album-cover" src="images/presence.jpg">
+            <img id="info-image" class="album-cover" src="">
           </div>
         </div>
 

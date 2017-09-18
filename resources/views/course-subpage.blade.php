@@ -15,10 +15,10 @@
   <div class="progress-header sp-3">
 <!-- Progress Info -->
     <div class="row">
-      <div class="col-2">
+      <div class="col-12 col-lg-2">
         <h2 class="my-auto">Progress</h2>
       </div>
-      <div class="col-10 my-auto">
+      <div class="col-12 col-lg-10 my-auto">
         <div class="progress">
           <div class="progress-bar" role="progressbar" aria-valuenow="70" area-valuemin="0" aria-valuemax="100" style="width:70%">70%</div>
         </div>

@@ -21,14 +21,16 @@
     </div>
 
   <!-- Quote -->
-      <div class="row quote-row sp-3">
-        <div class="col-lg-2">
+    <div class="row quote-row sp-3">
+      <div class="col-12 col-md-3 col-lg-2">
+        <div class="col-4 col-md-12 mx-auto">
           <img class="thumbnail" src="images/islamic_pattern.png">
         </div>
-        <div class="col-lg-10 my-auto">
-          <p class="quote inline"><i>"To access the Truth, we must devote ourselves to the pursuit of this knowledge and seek to understand it through practice."</i></p>
-        </div>
       </div>
+      <div class="col-12 col-md-9 col-lg-10 my-auto">
+        <p class="quote inline"><i>"To access the Truth, we must devote ourselves to the pursuit of this knowledge and seek to understand it through practice."</i></p>
+      </div>
+    </div>
 
   <!-- Content -->
     <div class="row sp-3">

@@ -21,16 +21,33 @@
 
 <!-- Header -->
 <header>
-  <nav class="navbar navbar-toggleable-md fixed-top">
 
+  @guest
+    <nav class="navbar navbar-md fixed-top">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+          </a>
+          <div class="dropdown-menu" id="language-dropdown" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="">English</a>
+            <a class="dropdown-item" href="">French</a>
+            <a class="dropdown-item" href="">Persian</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  @endguest
+
+  @auth
+  <nav class="navbar navbar-toggleable-md fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#"><img src="{{ asset('images/islamic_pattern.png') }}" width="40px" height="40px" class="mx-auto my-auto" alt="">
+    <a class="navbar-brand" href="/home"><img src="{{ asset('images/islamic_pattern.png') }}" width="40px" height="40px" class="mx-auto my-auto" alt="">
     <span>Ostad Elahi Music Analysis</span></a>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
-        @auth
         <li class="nav-item active">
           <a class="nav-link" href="/analysis">Analysis<span class="sr-only">(current)</span></a>
         </li>
@@ -46,22 +63,6 @@
         <li class="nav-item">
           <a class="nav-link" href="/home">Home</a>
         </li>
-        @endauth
-
-        @guest
-            <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ route('register') }}">Register</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Language
-              </a>
-              <div class="dropdown-menu" id="language-dropdown" aria-labelledby="languageDropdown">
-                <a class="dropdown-item" href="">English</a>
-                <a class="dropdown-item" href="">French</a>
-                <a class="dropdown-item" href="">Persian</a>
-              </div>
-            </li>
-        @else
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="nameDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{ Auth::user()->name }}
@@ -72,16 +73,16 @@
                          document.getElementById('logout-form').submit();">
                 Logout
             </a>
-            <a class="dropdown-item" href="profile">Profile</a>
+            <a class="dropdown-item" href="/profile">Profile</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}
             </form>
           </div>
         </li>
-        @endguest
       </ul>
     </div>
   </nav>
+  @endauth
 </header>
 
   <!-- Content -->
@@ -95,7 +96,7 @@
       <div class="row h-100 justify-content-center">
         <div class="col-4">
           <ul class="footer-list text-center">
-            <li class="sp-1"><a href="contact">Contact</a></li>
+            <li class="sp-1"><a href="/contact">Contact</a></li>
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">Copyright Website Name &copy; 2017</a></li>
           </ul>

@@ -28,6 +28,7 @@ class SearchController extends Controller
 
         if ($songs)
         {
+          $output.='<li id="deselect" data-song="" data-id="" data-album="" data-track="" data-image=""class="deselect">(Deselect)</li>';
           foreach ($songs as $song) {
             $output.='<li data-song="'.$song->song.'" data-id="'.$song->id.'" data-album="'.$song->album.'" data-track="'.$song->track_number.'" data-image="'.$song->image.'" class="search-result">'.$song->song.'</li>';
           }

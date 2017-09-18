@@ -20,14 +20,16 @@ $(document).ready(function() {
       $(this).addClass('btn-danger');
       $(this).html('Hide');
     }
-
   });
 
 
 // Input from search field finds matches from DB
 
 $('#search').on('keyup', function() {
-
+  var empty = $.trim($("#search").val());
+  if (empty == 0) {
+    reset()
+  }
   $value=$(this).val();
   $.ajax({
     type : 'get',
@@ -44,6 +46,7 @@ $('#search').on('keyup', function() {
 // Also applies filters to ajax result
 
 $('#search-results').on('click', '.search-result', function() {
+
   $('.search-result').removeClass('selected');
   $(this).addClass('selected');
   var id = (this.dataset.id);
@@ -65,16 +68,7 @@ $('#search-results').on('click', '.search-result', function() {
     success : function(data){
       $('#media-results').html(data);
       if ($('.filter-checkbox').is(':checked')) {
-        var type = $('.filter-checkbox:checked').map(function() { return $(this).val() }).get();
-        var length = type.length;
-        if ((type.length)==0) {
-          type = ['paragraph', 'sentence', 'phrase', 'motif', 'plucking', 'etc'];
-        }
-        $type = type;
-        $('.audio-file').hide();
-        for (i = 0; i < type.length; i++) {
-        $('.audio-file[data-type='+type[i]+']').show();
-        }
+        filter()
       }
     }
   })
@@ -83,7 +77,7 @@ $('#search-results').on('click', '.search-result', function() {
 
 // Filter with checkboxes
 
-  $('#checkbox-row').on('click', '.filter-checkbox', function() {
+function filter() {
     var type = $('.filter-checkbox:checked').map(function() { return $(this).val() }).get();
     var length = type.length;
     if ((type.length)==0) {
@@ -94,23 +88,33 @@ $('#search-results').on('click', '.search-result', function() {
     for (i = 0; i < type.length; i++) {
     $('.audio-file[data-type='+type[i]+']').show();
     }
+  }
+
+  $('#checkbox-row').on('click', '.filter-checkbox', function() {
+    filter()
   });
 
 
-  // Reset button shows all audio files
+  // Deselect list item shows all songs crossed with whatever checkboxes are still selected
 
-  $('#show-all').on('click', function() {
-    $('.search-result').removeClass('selected');
-    $('.filter-checkbox:checked').prop('checked', false);
+function reset() {
+  $('.search-result').removeClass('selected');
     $.ajax({
       type : 'get',
       url : 'show-all',
       data : {},
       success : function(data){
         $('#media-results').html(data);
+        if ($('.filter-checkbox').is(':checked')) {
+          filter()
+        }
       }
     })
-  });
+  }
 
+  $('#search-results').on('click', '#deselect', function() {
+    console.log('deselect');
+    reset()
+  });
 
 });
