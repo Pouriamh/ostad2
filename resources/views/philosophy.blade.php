@@ -14,9 +14,8 @@
 
     <div class="row">
       <div class="col-12">
-        <p class="sp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et semper ante. Phasellus et lorem quis velit placerat luctus. Nullam fermentum orci eu arcu dapibus, quis tristique neque fringilla. Morbi ultrices quam ex. Suspendisse dui ante, faucibus in tortor eget, ultrices rutrum magna. Donec eu imperdiet ligula. Aenean consectetur pharetra nunc in volutpat. Ut velit erat, rutrum sed eros ut, mollis porttitor neque.</p>
-        <p>Vestibulum fringilla sapien sit amet elit condimentum varius. Nulla enim urna, mattis tempor vehicula at, vestibulum vitae nulla. Ut suscipit finibus sapien, at posuere sapien tincidunt at. Nam consequat massa et scelerisque vestibulum. Suspendisse potenti. Sed viverra dignissim suscipit. Etiam in suscipit felis.</p>
-        <p>Sed posuere lorem at tempor volutpat. Nullam molestie diam velit, ut lobortis diam euismod quis. Donec quis eleifend diam. Cras et ante facilisis, semper arcu et, porttitor est. Ut pellentesque eget turpis ut aliquet. Proin sit amet condimentum risus. Morbi at leo turpis. Morbi in pulvinar tellus, in iaculis nibh. In auctor eu diam a faucibus. Praesent hendrerit tincidunt nulla, quis pharetra nulla euismod nec. Quisque sed nulla venenatis, laoreet quam in, tincidunt est. Nam scelerisque quam eu odio placerat, eu ornare arcu aliquet. In hac habitasse platea dictumst. Duis id molestie massa.</p>
+        <p class="sp-5">According to Ostad Elahi, there is more to human beings than a physical body endowed with intelligence. One’s real self, or “soul,” is not limited to a biological existence, nor does it perish with the demise of the body. Endowed with reason, willpower, and a moral sense, this self bears a remarkable capacity for transformation and the attainment of a higher state, one which Ostad Elahi deems to be the very purpose of our existence and describes as “Perfection.”</p>
+        <p>Building upon the quintessence of the authentic religions and the great wisdom traditions they inspired, Ostad Elahi innovated a concrete and systematic approach founded upon the practice of ethics and the pursuit of self-knowledge. He delineated the cognitive and spiritual processes required to undertake the process of spiritual perfection in order to realize one’s full humanity and acquire the substantive quality to return to one’s Origin.</p>
       </div>
     </div>
 
@@ -28,16 +27,16 @@
         </div>
       </div>
       <div class="col-12 col-md-9 col-lg-10 my-auto">
-        <p class="quote inline"><i>"To access the Truth, we must devote ourselves to the pursuit of this knowledge and seek to understand it through practice."</i></p>
+        <p class="quote inline"><i>Regardless of our religion, what is expected of us is to be a true human being: one who has a good disposition, moral integrity, and sound intentions.</i></p>
       </div>
     </div>
 
   <!-- Content -->
     <div class="row sp-3">
       <div class="col-12">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et semper ante. Phasellus et lorem quis velit placerat luctus. Nullam fermentum orci eu arcu dapibus, quis tristique neque fringilla. Morbi ultrices quam ex. Suspendisse dui ante, faucibus in tortor eget, ultrices rutrum magna. Donec eu imperdiet ligula. Aenean consectetur pharetra nunc in volutpat. Ut velit erat, rutrum sed eros ut, mollis porttitor neque.</p>
-        <p>Vestibulum fringilla sapien sit amet elit condimentum varius. Nulla enim urna, mattis tempor vehicula at, vestibulum vitae nulla. Ut suscipit finibus sapien, at posuere sapien tincidunt at. Nam consequat massa et scelerisque vestibulum. Suspendisse potenti. Sed viverra dignissim suscipit. Etiam in suscipit felis.</p>
-        <p>Sed posuere lorem at tempor volutpat. Nullam molestie diam velit, ut lobortis diam euismod quis. Donec quis eleifend diam. Cras et ante facilisis, semper arcu et, porttitor est. Ut pellentesque eget turpis ut aliquet. Proin sit amet condimentum risus. Morbi at leo turpis. Morbi in pulvinar tellus, in iaculis nibh. In auctor eu diam a faucibus. Praesent hendrerit tincidunt nulla, quis pharetra nulla euismod nec. Quisque sed nulla venenatis, laoreet quam in, tincidunt est. Nam scelerisque quam eu odio placerat, eu ornare arcu aliquet. In hac habitasse platea dictumst. Duis id molestie massa.</p>
+        <p>As bidimensional beings (body and soul), the inherent duality within us results in a constant inner tension that represents the indispensable condition for any dynamic of ethical and spiritual progress. Through the confrontation of this tension, the soul acquires an awareness of the faculties and forces that prevail within it and thus can learn how to gradually control them. The different stages of this learning process correspond to an actual educational curriculum, which Ostad Elahi has named the “new medicine of the soul.”</p>
+        <p>The general framework for the process of spiritual perfection can be approached from a metaphysical, theological, and cosmological perspective. The underlying metaphysics is sometimes expressed through a philosophical vocabulary inherited from the neo-Platonic tradition, as well as thinkers such as Avicenna and Mulla Sadra Shirazi. Rather than immutable essences, beings are viewed in terms of their varying degrees of intensity and their constant tendency to transform. Thus, from its initial point of appearance to its ultimate Perfection, each substance traverses the degrees of being that correspond to the different levels of creation (mineral, vegetal, animal, and human) by virtue of an animating “transubstantial movement.”</p>
+        <p>The cosmology of the spiritual worlds and interworlds is coupled with a theology that describes the modalities of the relationship between beings and a proactive Creator who serves not only as the guarantor of individual rights, but also as the regulator of a divine system governed by rational laws in conformity with the principle of causality. Accordingly, divine justice and equity prevail in all matters, such that nothing can be obtained without the requisite effort. From this proposition follows the concept of a finite cycle of successive lives, without which the realization of our Perfection would remain but a distant ideal.</p>
       </div>
     </div>
 

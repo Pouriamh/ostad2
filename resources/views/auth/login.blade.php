@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Login')
+
 @section('content')
 <!-- Masthead -->
 <div class="fluid-container masthead pd-14">

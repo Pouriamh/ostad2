@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Analysis')
+@section('title', 'Home')
 
 @section('content')
 <!-- Masthead -->
@@ -43,9 +43,7 @@
 <!-- Section Content -->
     <div class="row">
       <article class="col-12">
-        <p class="sp-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et semper ante. Phasellus et lorem quis velit placerat luctus. Nullam fermentum orci eu arcu dapibus, quis tristique neque fringilla. Morbi ultrices quam ex. Suspendisse dui ante, faucibus in tortor eget, ultrices rutrum magna. Donec eu imperdiet ligula. Aenean consectetur pharetra nunc in volutpat. Ut velit erat, rutrum sed eros ut, mollis porttitor neque.</p>
-        <p>Vestibulum fringilla sapien sit amet elit condimentum varius. Nulla enim urna, mattis tempor vehicula at, vestibulum vitae nulla. Ut suscipit finibus sapien, at posuere sapien tincidunt at. Nam consequat massa et scelerisque vestibulum. Suspendisse potenti. Sed viverra dignissim suscipit. Etiam in suscipit felis.</p>
-        <p>Sed posuere lorem at tempor volutpat. Nullam molestie diam velit, ut lobortis diam euismod quis. Donec quis eleifend diam. Cras et ante facilisis, semper arcu et, porttitor est. Ut pellentesque eget turpis ut aliquet. Proin sit amet condimentum risus. Morbi at leo turpis. Morbi in pulvinar tellus, in iaculis nibh. In auctor eu diam a faucibus. Praesent hendrerit tincidunt nulla, quis pharetra nulla euismod nec. Quisque sed nulla venenatis, laoreet quam in, tincidunt est. Nam scelerisque quam eu odio placerat, eu ornare arcu aliquet. In hac habitasse platea dictumst. Duis id molestie massa.</p>
+        <p class="sp-5">The music of Ostad Elahi is rooted in a tradition that has remained hidden over the centuries. Until relatively recently, this music was played only in small gatherings convened for prayer and contemplation. Ostad Elahi himself never performed in public, and always played for the sake of contemplation, whether alone or in a small circle of family and friends. The pieces that have remained are mostly from the latter part of his life and were recorded with nonprofessional equipment by his family. These recordings comprise some 40 hours on tape, a portion of which has thus far been digitized and published. His music has had a profound impact on all those who have heard it, including many renowned musicians and musicologists.</p>
       </article>
     </div>
   </section>

@@ -257,7 +257,7 @@ iframe {
 
 
 /* -- Analysis -- */
-.search-section {
+.search-section, .timeline-section {
   background-color: #f2f2f2;
   border: 1px solid rgba(0,0,0,.15);
   padding: 1rem;
@@ -357,6 +357,131 @@ iframe {
 }
 
 
+
+
+
+/* -- Timeline --*/
+#timeline-section {
+  min-width: 962px;
+  width: 100%;
+}
+.track, .track-header {
+  background: #fff;
+}
+.track {
+  height: 100px;
+  margin-top: 1rem;
+}
+.track-header {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, .15);
+  width: 210px;
+}
+.workspace {
+  border: 1px solid rgba(0, 0, 0, .15);
+  margin-left: -1px;
+  flex: 1 1 auto;
+}
+.audio-file-region {
+  height: 80%;
+}
+.audio-file-info {
+  border-top: 1px solid rgba(0, 0, 0, .15);
+  height: 20%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  margin: 0;
+}
+.switch input {display:none;}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5cb85c;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #d9534f;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+.slider.round {
+  border-radius: 12px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.track-label {
+  font-family: catamaran, sans-serif;
+  font-size: .7rem;
+  text-transform: uppercase;
+}
+.header-controls-container {
+  position: absolute;
+  bottom: 4px;
+  margin: 0;
+  width: 100%;
+  padding: 0 12px;
+}
+.controls-left {
+  padding: 0;
+}
+.clear-button {
+  height: 1.5rem;
+  font-size: .7rem;
+  font-weight: lighter;
+}
+.fa-arrow-up:hover, .fa-arrow-down:hover {
+  color: #5cb85c;
+}
+.audio-file-info span {
+  color: #888888;
+}
+#zoom-control {
+  position: relative;
+  width: 230px;
+}
+#zoom-control:before {
+  position: absolute;
+  content: "-";
+  left: -15px;
+  align-self: center;
+}
+#zoom-control:after {
+  position: absolute;
+  content: "+";
+  right: -15px;
+  align-self: center;
+}
+.media-controls i:hover {
+  color: #5cb85c;
+}
 
 
 
@@ -476,11 +601,6 @@ footer {
 .footer-list a:hover {
   color: #fec503;
 }
-
-/*input::placeholder {
-  font-family: roboto slab, serif;
-  font-size: .9rem;
-}*/
 
 
 /* -- Hero -- */

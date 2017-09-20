@@ -10,7 +10,7 @@ $(document).ready(function() {
       $('#search-section').css({'background-color': '#fff', 'border': 'none'});
       $(this).removeClass('btn-danger');
       $(this).addClass('btn-success');
-      $(this).html('Show');
+      $(this).html('Show Search');
     } else {
       $('#search-left-column').show(200);
       $('#search-middle-column').show(200);

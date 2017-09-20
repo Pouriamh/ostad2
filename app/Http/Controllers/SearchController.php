@@ -90,44 +90,4 @@ class SearchController extends Controller
       }
     }
 
-    public function filter2(Request $request)
-    {
-      $output="";
-      if ($request->ajax())
-      {
-        $output="";
-        $audio_files=DB::table('audio_files')->where('type', '=', $request->type)->where('song_id', '=', $request->song_id)->get();
-
-        if($audio_files)
-        {
-          foreach ($audio_files as $audio_file) {
-            $output.='<li class="audio-file" data-type="'.$audio_file->type.'" data-song-id="'.$audio_file->song_id.'">'.$audio_file->file.'</li>';
-          }
-          return Response($output);
-        }
-      }
-    }
-
-
-
-
-
-
-    // THIS ACTION (FILTER) IS WORKING PROPERLY
-    // public function filter(Request $request)
-    // {
-    //   $output="";
-    //   $audio_files=DB::table('audio_files')->where('type', '=', $request->type)->get();
-    //
-    //   if($audio_files)
-    //   {
-    //       foreach ($audio_files as $audio_file)
-    //       {
-    //         $output.='<li class="audio-file" data-type="'.$audio_file->type.'" data-song-id="'.$audio_file->song_id.'">'.$audio_file->file.'</li>';
-    //       }
-    //       return Response($output);
-    //   }
-    //
-    // }
-
 }

@@ -4,6 +4,8 @@
 
 @section('script')
 <script src="js/search.js" type="text/javascript"></script>
+<script src="js/timeline.js" type="text/javascript"></script>
+
 @stop
 
 @section('content')
@@ -17,7 +19,7 @@
 
 <!-- Search / Result / Info Section -->
   <div id="search-section" class="container-fluid search-section sp-3">
-    <div id="append-columns" class="row">
+    <div class="row">
 
 <!-- Left Column -->
       <div id="search-left-column" class="col-4">
@@ -137,7 +139,8 @@
   </div>
 
   <!-- Timeline -->
-  <h3 class="sp-6 text-center">(TIMELINE WILL GO HERE)</h3>
+  @include('timeline')
+
 
 <!-- End body container -->
 </div>
