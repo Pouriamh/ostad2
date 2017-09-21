@@ -54,7 +54,7 @@
 <!-- Media Controls -->
     <div class="media-controls pl-5 pr-5 col-4 d-flex justify-content-between">
       <i class="fa fa-2x fa-play" aria-hidden="true"></i>
-      <i class="fa fa-2x fa-pause" aria-hidden="true"></i>
+      <i class="fa fa-2x fa-pause" aria-hidden="true" display="none"></i>
       <i class="fa fa-2x fa-fast-forward" aria-hidden="true"></i>
       <i class="fa fa-2x fa-fast-backward" aria-hidden="true"></i>
       <i class="fa fa-2x fa-repeat" aria-hidden="true"></i>
