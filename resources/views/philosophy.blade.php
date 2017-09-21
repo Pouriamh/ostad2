@@ -40,5 +40,15 @@
       </div>
     </div>
 
+<!-- External Links -->
+    <div class="row sp-6">
+      <div class="col-12">
+        <h2>External Links</h2>
+        <ul class="resources-list sp-2">
+          <li><a href="http://ostadelahi.com/">Ostad Elahi</a><p>The official website on the life, work, and music of Ostad Elahi (1895-1974).</p></li>
+          <li><a href="http://ostadradio.com/">Ostad Radio</a><p>Summary of information available at link.</p></li>
+        </ul>
+      </div>
+    </div>
 </div>
   @stop

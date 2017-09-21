@@ -68,12 +68,15 @@
             {{ Auth::user()->name }}
           </a>
           <div class="dropdown-menu" aria-labelledby="nameDropdown">
+            <a class="dropdown-item" href="/profile">Profile</a>
+            <!-- <a class="dropdown-item" href="/progress">Progress</a> -->
+            <a class="dropdown-item" href="/projects">Projects</a>
             <a class="dropdown-item" id="logout-dropdown" href="{{ route('logout') }}"
                 onclick="event.preventDefault();
                          document.getElementById('logout-form').submit();">
                 Logout
             </a>
-            <a class="dropdown-item" href="/profile">Profile</a>
+
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}
             </form>

@@ -1,10 +1,22 @@
 /* -- Global -- */
-
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   font-family: catamaran, sans-serif;
+}
+.page-container {
+  min-height: 80vh;
 }
 button {
   text-transform: uppercase;
+}
+.btn-success {
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
 }
 a, a:hover {
   text-decoration: none;
@@ -123,6 +135,19 @@ textarea {
   height: 10rem;
 }
 
+
+
+
+/* -- Project Page -- */
+.projects-table th:nth-child(1) {
+  width: 50%;
+}
+.projects-table th:nth-child(2) {
+  width: 25%;
+}
+.projects-table th:nth-child(3) {
+  width: 25%;
+}
 
 
 
@@ -449,6 +474,14 @@ input:checked + .slider:before {
   width: 100%;
   padding: 0 12px;
 }
+.track-handle {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+}
+.track-handle:hover {
+  color: #5cb85c;
+}
 .controls-left {
   padding: 0;
 }
@@ -481,6 +514,9 @@ input:checked + .slider:before {
 }
 .media-controls i:hover {
   color: #5cb85c;
+}
+.fa-play {
+  width: 27.438px;
 }
 
 
@@ -607,8 +643,22 @@ footer {
 
 .masthead {
   background-color: #222222;
+  background-image: url("/images/background.jpg");
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  background-position: right;
   height: 100vh;
 }
+.masthead:before {
+  content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to right, #222222, #222222);
+	opacity: .6;
+  }
 
 .site-title h1{
   text-transform: uppercase;

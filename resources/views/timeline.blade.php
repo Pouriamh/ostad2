@@ -3,9 +3,10 @@
     <div id="timeline-column" class="col-12">
 
       @for ($i = 0; $i < 5; $i++)
-      <div class="row track">
+      <div draggable="true" class="row track">
 <!-- Track Header -->
         <div class="track-header">
+          <i class="track-handle fa fa-bars" aria-hidden="true"></i>
 <!-- Track Type -->
           <div class="pt-3 text-center">
             <h3>Track Type</h3>
@@ -52,11 +53,10 @@
       <input id="zoom-control" class="ml-4" type="range">
     </div>
 <!-- Media Controls -->
-    <div class="media-controls pl-5 pr-5 col-4 d-flex justify-content-between">
-      <i class="fa fa-2x fa-play" aria-hidden="true"></i>
-      <i class="fa fa-2x fa-pause" aria-hidden="true"></i>
-      <i class="fa fa-2x fa-fast-forward" aria-hidden="true"></i>
+    <div class="media-controls pl-5 pr-5 col-4 d-flex justify-content-around">
       <i class="fa fa-2x fa-fast-backward" aria-hidden="true"></i>
+      <i id="play-button" class="fa fa-2x fa-play" aria-hidden="true"></i>
+      <i class="fa fa-2x fa-fast-forward" aria-hidden="true"></i>
       <i class="fa fa-2x fa-repeat" aria-hidden="true"></i>
     </div>
 <!-- Save Project Button -->
