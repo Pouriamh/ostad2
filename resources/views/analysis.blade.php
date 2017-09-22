@@ -3,6 +3,7 @@
 @section('title', 'Analysis')
 
 @section('script')
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/search.js" type="text/javascript"></script>
 <script src="js/timeline.js" type="text/javascript"></script>
 

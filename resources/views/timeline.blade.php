@@ -2,22 +2,23 @@
   <div class="row pl-2 pr-2">
     <div id="timeline-column" class="col-12">
 
-      @for ($i = 0; $i < 5; $i++)
-      <div draggable="true" class="row track">
+<!-- optional loop ($i = 0; $i < 5; $i++) -->
+<!-- TRACK 1 -->
+      <div id="track-1" class="row track">
 <!-- Track Header -->
         <div class="track-header">
           <i class="track-handle fa fa-bars" aria-hidden="true"></i>
 <!-- Track Type -->
           <div class="pt-3 text-center">
-            <h3>Track Type</h3>
+            <h3>Track 1</h3>
           </div>
 <!-- Track Header Controls -->
           <div class="header-controls-container justify-content-between row">
             <div class="col-8 controls-left">
 <!-- Move Track -->
               <div>
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
-                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                <i class="fa move-track-button fa-arrow-up" aria-hidden="true" data-direction="up"></i>
+                <i class="fa move-track-button fa-arrow-down" aria-hidden="true" data-direction="down"></i>
                 <span class="track-label align-middle">Move Track</span>
               </div>
 <!-- Play / Silent Switch -->
@@ -43,7 +44,184 @@
           </div>
         </div>
       </div>
-      @endfor
+
+
+
+<!-- TRACK 2 -->
+      <div id="track-2" class="row track">
+<!-- Track Header -->
+        <div class="track-header">
+          <i class="track-handle fa fa-bars" aria-hidden="true"></i>
+<!-- Track Type -->
+          <div class="pt-3 text-center">
+            <h3>Track 2</h3>
+          </div>
+<!-- Track Header Controls -->
+          <div class="header-controls-container justify-content-between row">
+            <div class="col-8 controls-left">
+<!-- Move Track -->
+              <div>
+                <i class="fa move-track-button fa-arrow-up" aria-hidden="true" data-direction="up"></i>
+                <i class="fa move-track-button fa-arrow-down" aria-hidden="true" data-direction="down"></i>
+                <span class="track-label align-middle">Move Track</span>
+              </div>
+<!-- Play / Silent Switch -->
+              <div>
+                <span class="track-label">Play</span>
+                <label class="switch align-middle">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <span class="track-label">Silent</span>
+              </div>
+            </div>
+<!-- Clear Button -->
+            <button class="col-4 clear-button btn btn-sm btn-danger align-self-center">Clear</button>
+          </div>
+        </div>
+<!-- Workspace -->
+        <div class="workspace">
+          <div class="audio-file-region">
+          </div>
+          <div class="audio-file-info">
+            <span class="track-label pl-1 align-middle">Info:</span>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- TRACK 3 -->
+      <div id="track-3" class="row track">
+<!-- Track Header -->
+        <div class="track-header">
+          <i class="track-handle fa fa-bars" aria-hidden="true"></i>
+<!-- Track Type -->
+          <div class="pt-3 text-center">
+            <h3>Track 3</h3>
+          </div>
+<!-- Track Header Controls -->
+          <div class="header-controls-container justify-content-between row">
+            <div class="col-8 controls-left">
+<!-- Move Track -->
+              <div>
+                <i class="fa move-track-button fa-arrow-up" aria-hidden="true" data-direction="up"></i>
+                <i class="fa move-track-button fa-arrow-down" aria-hidden="true" data-direction="down"></i>
+                <span class="track-label align-middle">Move Track</span>
+              </div>
+<!-- Play / Silent Switch -->
+              <div>
+                <span class="track-label">Play</span>
+                <label class="switch align-middle">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <span class="track-label">Silent</span>
+              </div>
+            </div>
+<!-- Clear Button -->
+            <button class="col-4 clear-button btn btn-sm btn-danger align-self-center">Clear</button>
+          </div>
+        </div>
+<!-- Workspace -->
+        <div class="workspace">
+          <div class="audio-file-region">
+          </div>
+          <div class="audio-file-info">
+            <span class="track-label pl-1 align-middle">Info:</span>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- TRACK 4 -->
+      <div id="track-4" class="row track">
+<!-- Track Header -->
+        <div class="track-header">
+          <i class="track-handle fa fa-bars" aria-hidden="true"></i>
+<!-- Track Type -->
+          <div class="pt-3 text-center">
+            <h3>Track 4</h3>
+          </div>
+<!-- Track Header Controls -->
+          <div class="header-controls-container justify-content-between row">
+            <div class="col-8 controls-left">
+<!-- Move Track -->
+              <div>
+                <i class="fa move-track-button fa-arrow-up" aria-hidden="true" data-direction="up"></i>
+                <i class="fa move-track-button fa-arrow-down" aria-hidden="true" data-direction="down"></i>
+                <span class="track-label align-middle">Move Track</span>
+              </div>
+<!-- Play / Silent Switch -->
+              <div>
+                <span class="track-label">Play</span>
+                <label class="switch align-middle">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <span class="track-label">Silent</span>
+              </div>
+            </div>
+<!-- Clear Button -->
+            <button class="col-4 clear-button btn btn-sm btn-danger align-self-center">Clear</button>
+          </div>
+        </div>
+<!-- Workspace -->
+        <div class="workspace">
+          <div class="audio-file-region">
+          </div>
+          <div class="audio-file-info">
+            <span class="track-label pl-1 align-middle">Info:</span>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- TRACK 5 -->
+      <div id="track-5" class="row track">
+<!-- Track Header -->
+        <div class="track-header">
+          <i class="track-handle fa fa-bars" aria-hidden="true"></i>
+<!-- Track Type -->
+          <div class="pt-3 text-center">
+            <h3>Track 5</h3>
+          </div>
+<!-- Track Header Controls -->
+          <div class="header-controls-container justify-content-between row">
+            <div class="col-8 controls-left">
+<!-- Move Track -->
+              <div>
+                <i class="fa move-track-button fa-arrow-up" aria-hidden="true" data-direction="up"></i>
+                <i class="fa move-track-button fa-arrow-down" aria-hidden="true" data-direction="down"></i>
+                <span class="track-label align-middle">Move Track</span>
+              </div>
+<!-- Play / Silent Switch -->
+              <div>
+                <span class="track-label">Play</span>
+                <label class="switch align-middle">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <span class="track-label">Silent</span>
+              </div>
+            </div>
+<!-- Clear Button -->
+            <button class="col-4 clear-button btn btn-sm btn-danger align-self-center">Clear</button>
+          </div>
+        </div>
+<!-- Workspace -->
+        <div class="workspace">
+          <div class="audio-file-region">
+          </div>
+          <div class="audio-file-info">
+            <span class="track-label pl-1 align-middle">Info:</span>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 <!-- Zoom Control -->
