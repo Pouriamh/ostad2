@@ -14,7 +14,7 @@
 
   <div id="analysis-title" class="row">
     <div class="text-center col-12">
-      <h1>Analysis Module</h1>
+      <h1>Analysis Module2</h1>
     </div>
   </div>
 
