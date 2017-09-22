@@ -643,12 +643,13 @@ footer {
 
 .masthead {
   background-color: #222222;
-  background-image: url("/images/background.jpg");
+/*   background-image: url("/images/background.jpg");
   background-size: 50vw;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right; */
   height: 100vh;
 }
+/*
 .masthead:before {
   content: '';
 	position: absolute;
@@ -659,6 +660,7 @@ footer {
 	background-image: linear-gradient(to right, #222222, #222222);
 	opacity: .6;
   }
+*/
 
 .site-title h1{
   text-transform: uppercase;
