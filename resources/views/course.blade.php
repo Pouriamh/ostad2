@@ -37,7 +37,7 @@
         <div class="course-col">Course</div>
         <div class="description-col">Description</div>
         <div class="status-col">Status</div>
-        <div class="icon-col"></div>
+        <div class="icon-col">Progress</div>
     </div>
   </div>
 
@@ -90,7 +90,6 @@
         @endforeach
 
       </tbody>
-
     </table>
   </div>
 <!--

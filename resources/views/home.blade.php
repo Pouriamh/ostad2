@@ -21,7 +21,7 @@
       <h3 class="text-w">Welcome</h3>
       <a href="#home-container"><svg id="down-arrow" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289 289">
         <title>forward_button</title>
-        <circle cx="144.5" cy="144.5" r="138" fill="#222222" stroke="#fec503" stroke-miterlimit="10" stroke-width="13"/>
+        <circle cx="144.5" cy="144.5" r="138" fill="none" stroke="#fec503" stroke-miterlimit="10" stroke-width="13"/>
         <polyline points="212.9 118.6 144.7 186.8 76 118.2" fill="none" stroke="#fec503" stroke-miterlimit="10" stroke-width="13"/>
       </svg></a>
     </div>

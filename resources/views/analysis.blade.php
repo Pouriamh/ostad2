@@ -3,15 +3,16 @@
 @section('title', 'Analysis')
 
 @section('script')
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/search.js" type="text/javascript"></script>
 <script src="js/timeline.js" type="text/javascript"></script>
 
 @stop
 
 @section('content')
-<div class="container-fluid pd-9">
+<div id="analysis-container" class="container-fluid pd-9">
 
-  <div class="row">
+  <div id="analysis-title" class="row">
     <div class="text-center col-12">
       <h1>Analysis Module</h1>
     </div>
@@ -43,7 +44,7 @@
           <div class="col-12">
             <h2 class="text-bold search-header">Song List</h2>
             <div id="search-results-box" class="results-box">
-<!-- Song list goes here -->
+<!-- Song list based on search input -->
               <ul id="search-results" class="results">
                 <li id="deselect" data-song="" data-id="" data-album="" data-track="" data-image=""class="deselect">(Deselect)</li>
                 @foreach ($songs as $song)
@@ -89,6 +90,7 @@
             <div class="row">
               <div class="col-12 d-flex justify-content-between">
                 <h2 class="text-bold search-header">Drag Media to Timeline</h2>
+                <button class="btn btn-success btn-sm align-self-start"><a class="course-link">Add To Timeline</a></button>
               </div>
             </div>
             <div id="drag-media-box" class="results-box">

@@ -39,6 +39,12 @@ Route::get('contact', function () {
   return view('contact');
 });
 
+Route::get('projects', function () {
+  return view('projects');
+});
+
+Route::get('progress', 'ProgressController@index');
+
 Route::get('analysis', 'SearchController@index')->middleware('auth');
 
 Route::get('search', 'SearchController@search')->middleware('auth');

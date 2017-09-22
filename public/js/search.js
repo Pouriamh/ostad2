@@ -4,6 +4,8 @@ $(document).ready(function() {
 
   $('#hide-button').on('click', function() {
     if ($(this).hasClass('btn-danger')) {
+      $('#analysis-container').toggleClass('pd-9 pt-4');
+      $('#analysis-title').hide(200);
       $('#search-left-column').hide(200);
       $('#search-middle-column').hide(200);
       $('#search-right-column').hide(200);
@@ -12,6 +14,8 @@ $(document).ready(function() {
       $(this).addClass('btn-success');
       $(this).html('Show Search');
     } else {
+      $('#analysis-container').toggleClass('pd-9 pt-4');
+      $('#analysis-title').show(200);
       $('#search-left-column').show(200);
       $('#search-middle-column').show(200);
       $('#search-right-column').show(200);
