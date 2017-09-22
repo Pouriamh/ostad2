@@ -644,7 +644,6 @@ footer {
 
 .masthead {
   background-color: #222222;
-<<<<<<< HEAD
   /*background-image: url("/images/background.jpg");
   background-size: 50vw;
   background-repeat: no-repeat;
@@ -652,16 +651,6 @@ footer {
   height: 100vh;
 }
 /*.masthead:before {
-=======
-/*   background-image: url("/images/background.jpg");
-  background-size: 50vw;
-  background-repeat: no-repeat;
-  background-position: right; */
-  height: 100vh;
-}
-/*
-.masthead:before {
->>>>>>> edf6cdeaac85e89068d25731d7fd6642e0b4e875
   content: '';
 	position: absolute;
 	top: 0;
@@ -670,12 +659,7 @@ footer {
 	left: 0;
 	background-image: linear-gradient(to right, #222222, #222222);
 	opacity: .6;
-<<<<<<< HEAD
   }*/
-=======
-  }
-*/
->>>>>>> edf6cdeaac85e89068d25731d7fd6642e0b4e875
 
 .site-title h1{
   text-transform: uppercase;
